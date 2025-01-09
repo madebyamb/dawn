@@ -1,1 +1,81 @@
-{"name":"t:sections.footer.name","type":"footer","sections":{"newsletter":{"type":"newsletter","blocks":{"heading":{"type":"heading","settings":{"heading":"Subscribe to our emails","heading_size":"h1"}},"paragraph":{"type":"paragraph","settings":{"text":"<p>Join our email list for exclusive offers and the latest news. <\/p>"}},"email-form":{"type":"email_form","settings":{}}},"block_order":["heading","paragraph","email-form"],"settings":{"color_scheme":"scheme-2","full_width":true,"padding_top":44,"padding_bottom":8}},"footer":{"type":"footer","settings":{"color_scheme":"scheme-2","newsletter_enable":false,"newsletter_heading":"Subscribe to our emails","enable_follow_on_shop":true,"show_social":true,"enable_country_selector":true,"enable_language_selector":true,"payment_enable":false,"show_policy":true,"margin_top":0,"padding_top":44,"padding_bottom":48}}},"order":["newsletter","footer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "custom_liquid_aUqbPG": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div class=\"centered-text-box\">\n  <p>Éditions</p>\n</div>\n\n<style>\n  .centered-text-box {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 200px; /* Adjust height as needed */\n    width: 100%; /* Full width */\n    text-align: center; /* Ensures text is centered */\n  }\n\n  .centered-text-box p {\n    margin: 0; /* Removes default paragraph margin */\n    font-size: 128px; /* Adjust font size as needed */\n    color: #333; /* Text color */\n  }\n</style>",
+        "color_scheme": "scheme-1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Suivez notre avancé",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Rejoignez notre mailing liste et soyez tenu au courant de nos dernières solutions.</p>"
+          }
+        },
+        "email-form": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email-form"
+      ],
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 8
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 12,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_aUqbPG",
+    "newsletter",
+    "footer"
+  ]
+}
