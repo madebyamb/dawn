@@ -400,6 +400,19 @@
           "settings": {
             "image": {
               "label": "Upload image"
+            },
+            "alt": {
+              "label": "Alt text",
+              "info": "Enter a description for the image to improve accessibility"
+            }
+          }
+        },
+        "text": {
+          "name": "Text",
+          "settings": {
+            "content": {
+              "label": "Content",
+              "info": "Enter the text content for this section"
             }
           }
         }
