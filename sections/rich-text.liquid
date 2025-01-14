@@ -87,6 +87,22 @@
                   </a>
                 {%- endif -%}
               </div>
+            {%- when 'image' -%}
+              <div
+                class="rich-text__image{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                style="text-align: {{ block.settings.image_alignment }};"
+                {{ block.shopify_attributes }}
+                {% if settings.animations_reveal_on_scroll %}
+                  data-cascade
+                  style="--animation-order: {{ forloop.index }};"
+                {% endif %}
+              >
+                <img
+                  src="{{ block.settings.image | image_url }}"
+                  alt="{{ block.settings.image | image_alt }}"
+                  class="rich-text__image-element"
+                >
+              </div>
           {%- endcase -%}
         {%- endfor -%}
       </div>
@@ -324,6 +340,38 @@
           "id": "button_style_secondary_2",
           "default": false,
           "label": "t:sections.rich-text.blocks.buttons.settings.button_style_secondary_2.label"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "t:sections.rich-text.blocks.image.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.rich-text.blocks.image.settings.image.label"
+        },
+        {
+          "type": "select",
+          "id": "image_alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "center",
+          "label": "Image alignment"
         }
       ]
     }

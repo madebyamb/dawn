@@ -2988,6 +2988,16 @@
               "label": "Use outline button style"
             }
           }
+        },
+        "blocks": {
+          "image": {
+            "name": "Image",
+            "settings": {
+              "image": {
+                "label": "Upload image"
+              }
+            }
+          }
         }
       },
       "presets": {
