@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -6,9 +15,56 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_with_text_JxxLQ6": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_J8PL4b": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image avec texte",
+            "heading_size": "h1"
+          }
+        },
+        "text_mYjgwd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Associez un texte à une image pour mettre en avant le produit, la collection ou l’article de blog de votre choix. Ajoutez des informations sur la disponibilité ou le style. Vous pouvez même fournir un avis.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_XWLjDF": {
+          "type": "button",
+          "settings": {
+            "button_label": "Texte du bouton",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_J8PL4b",
+        "text_mYjgwd",
+        "button_XWLjDF"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_with_text_JxxLQ6"
   ]
 }

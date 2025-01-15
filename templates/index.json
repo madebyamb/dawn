@@ -73,10 +73,54 @@
         "padding_top": 56,
         "padding_bottom": 68
       }
+    },
+    "rich_text_4CYNFE": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_A7XrCB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Parler de sa marque",
+            "heading_size": "h1"
+          }
+        },
+        "text_Rzjttx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>UVP</p>"
+          }
+        },
+        "button_Brh8Xk": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Texte du bouton",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_A7XrCB",
+        "text_Rzjttx",
+        "button_Brh8Xk"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "rich_text_tfqY8E",
-    "featured-collection"
+    "featured-collection",
+    "rich_text_4CYNFE"
   ]
 }
