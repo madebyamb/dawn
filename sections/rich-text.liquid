@@ -122,7 +122,7 @@
                   <p>Image Height Setting: {{ block.settings.height }}</p>
                   <p>Image Alignment Setting: {{ block.settings.image_alignment }}</p>
                   <p>Image Behavior Setting: {{ block.settings.image_behavior }}</p>
-                  <p>Image Aspect Ratio: {{ block.settings.image.aspect_ratio }}</p>
+                  <p>Image Aspect Ratio: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}</p>
                 </div>
               </div>
           {%- endcase -%}
