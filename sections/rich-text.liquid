@@ -126,9 +126,11 @@
                   <p>Block Setting Image: {{ block.settings.image }}</p>
                   <p>
                     {% if settings.height == 'adapt' and block.settings.image != blank %}
-                      style="padding-bottom: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;"
+                      condition padding true
                     {% endif %}
                   </p>
+                  <p></p>
+                  <p>style="padding-bottom: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;"</p>
                 </div>
               </div>
           {%- endcase -%}
