@@ -651,6 +651,11 @@
         "show_view_all": {
           "label": "Enable \"View all\" button if list includes more collections than shown"
         },
+        "padding": {
+          "section_padding_heading": "Section padding",
+          "padding_top": "Top padding",
+          "padding_bottom": "Bottom padding"
+        },
         "header_mobile": {
           "content": "Mobile Layout"
         },
