@@ -2989,14 +2989,10 @@
             }
           }
         },
-        "blocks": {
-          "image": {
-            "name": "Image",
-            "settings": {
-              "image": {
-                "label": "Upload image"
-              }
-            }
+        "image": {
+          "name": "Image",
+          "settings": {
+            "image": { "label": "Upload image" }
           }
         }
       },

@@ -908,6 +908,9 @@
         },
         "delivered_description_digital": {
           "many": "These articles are finished."
+        },
+        "tracking_number": {
+          "many": "Tracking numbers"
         }
       },
       "if_not_received": {
