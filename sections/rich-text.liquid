@@ -117,7 +117,7 @@
                   {%- else -%}
                     {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
                   {%- endif -%}
-                  {{ block.settings.image | json }}
+                  <p>Height Setting: {{ block.settings.height }}</p>
                 </div>
               </div>
           {%- endcase -%}
