@@ -124,6 +124,7 @@
                   <p>Image Behavior Setting: {{ block.settings.image_behavior }}</p>
                   <p>Image Aspect Ratio: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}</p>
                   <p>Block Setting Image: {{ block.settings.image }}</p>
+                  <p></p>
                   <p>
                     {% if settings.height == 'adapt' and block.settings.image != blank %}
                       condition a padding true
@@ -131,7 +132,27 @@
                   </p>
                   <p>
                     {% if section.settings.height == 'adapt' and section.settings.image != blank %}
-                      condition a padding true
+                      condition b padding true
+                    {% endif %}
+                  </p>
+                  <p>
+                    {% if true %}
+                      condition c padding true
+                    {% endif %}
+                  </p>
+                  <p>
+                    {% if true and true %}
+                      condition d padding true
+                    {% endif %}
+                  </p>
+                  <p>
+                    {% if section.settings.height == 'adapt' %}
+                      condition e padding true
+                    {% endif %}
+                  </p>
+                  <p>
+                    {% if block.settings.image != blank %}
+                      condition f padding true
                     {% endif %}
                   </p>
                   <p>style="padding-bottom: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;"</p>
