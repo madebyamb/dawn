@@ -126,10 +126,14 @@
                   <p>Block Setting Image: {{ block.settings.image }}</p>
                   <p>
                     {% if settings.height == 'adapt' and block.settings.image != blank %}
-                      condition padding true
+                      condition a padding true
                     {% endif %}
                   </p>
-                  <p></p>
+                  <p>
+                    {% if section.settings.height == 'adapt' and section.settings.image != blank %}
+                      condition a padding true
+                    {% endif %}
+                  </p>
                   <p>style="padding-bottom: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;"</p>
                 </div>
               </div>

@@ -57,13 +57,6 @@
             {%- else -%}
               {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
             {%- endif -%}
-
-            {% comment %} Debugging {% endcomment %}
-            <p>
-              {% if settings.height == 'adapt' and block.settings.image != blank %}
-                condition padding true
-              {% endif %}
-            </p>
           </div>
         </div>
         <div class="image-with-text__text-item grid__item">
