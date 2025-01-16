@@ -88,7 +88,7 @@
                 {%- endif -%}
               </div>
             {%- when 'image' -%}
-              <div class="image-with-text__media-item image-with-text__media-item--{{ settings.desktop_image_width }} image-with-text__media-item--{{ block.settings.image_alignment }} grid__item">
+              <div class="image-with-text__media-item image-with-text__media-item--{{ settings.desktop_image_width }} image-with-text__media-item--{{ block.settings.image_alignment }}">
                 <div
                   class="image-with-text__media image-with-text__media--{{ settings.height }} global-media-settings{% unless remove_color_classes %} gradient color-{{ settings.color_scheme }}{% else %} background-transparent{% endunless %}{% if block.settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}{% if block.settings.image_behavior != 'none' %} animate--{{ block.settings.image_behavior }}{% endif %}"
                   {% if settings.height == 'adapt' and block.settings.image != blank %}
