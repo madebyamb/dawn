@@ -117,7 +117,16 @@
                   {%- else -%}
                     {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
                   {%- endif -%}
-                  <p>Height Setting: {{ block.settings.height }}</p>
+                  <p>
+                    Height Setting: {{ block.settings.height -}}
+                    <br>
+                    {{ block.settings | json }}
+                  </p>
+                  <!-- Debugging the image settings -->
+                  <p>Image: {{ block.settings.image | json }}</p>
+                  <p>Image Height Setting: {{ block.settings.height }}</p>
+                  <p>Image Alignment Setting: {{ block.settings.image_alignment }}</p>
+                  <p>Image Behavior Setting: {{ block.settings.image_behavior }}</p>
                 </div>
               </div>
           {%- endcase -%}
