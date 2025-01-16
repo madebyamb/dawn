@@ -123,6 +123,7 @@
                   <p>Image Alignment Setting: {{ block.settings.image_alignment }}</p>
                   <p>Image Behavior Setting: {{ block.settings.image_behavior }}</p>
                   <p>Image Aspect Ratio: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}</p>
+                  <p>Block Setting Image: {{ block.settings.image }}</p>
                 </div>
               </div>
           {%- endcase -%}
