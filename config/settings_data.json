@@ -9,13 +9,13 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/LOGO_BLEU.png",
+    "logo": "shopify://shop_images/LOGO_BLEU-2.png",
     "logo_width": 200,
-    "favicon": "shopify://shop_images/Icon.svg",
+    "favicon": "shopify://shop_images/FAVICON.png",
     "type_header_font": "poppins_n5",
     "heading_scale": 120,
-    "type_body_font": "poppins_n4",
-    "body_scale": 100,
+    "type_body_font": "montserrat_n4",
+    "body_scale": 105,
     "page_width": 1200,
     "spacing_sections": 36,
     "spacing_grid_horizontal": 40,
@@ -208,6 +208,17 @@
           "button": "#003366",
           "button_label": "#fdfbf7",
           "secondary_button_label": "#003366",
+          "shadow": "#2e2a39"
+        }
+      },
+      "scheme-c7deeaa6-c67f-46df-8806-afd65ff0c294": {
+        "settings": {
+          "background": "{{ shop.brand.colors.secondary[0].foreground }}",
+          "background_gradient": "linear-gradient(180deg, rgba(0, 51, 102, 1), rgba(255, 255, 255, 1) 100%)",
+          "text": "#003366",
+          "button": "#edffa7",
+          "button_label": "#fdfbf7",
+          "secondary_button_label": "#2e2a39",
           "shadow": "#2e2a39"
         }
       }

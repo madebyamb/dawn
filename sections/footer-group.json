@@ -27,14 +27,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Suivez notre avancé",
+            "heading": "Découvrez nos produits",
             "heading_size": "h1"
           }
         },
         "paragraph": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Rejoignez notre mailing liste et soyez tenu au courant de nos dernières solutions.</p>"
+            "text": "<p>Abonnez-vous à notre newsletter pour découvrir nos derniers produits</p>"
           }
         },
         "email-form": {
