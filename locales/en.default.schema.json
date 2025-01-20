@@ -752,6 +752,9 @@
         "show_description": {
           "label": "Show collection description from the admin"
         },
+        "show_product_price": {
+          "label": "Show product price"
+        },
         "description_style": {
           "label": "Description style",
           "options__1": {

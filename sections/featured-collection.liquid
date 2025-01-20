@@ -111,9 +111,11 @@
               show_secondary_image: section.settings.show_secondary_image,
               show_vendor: section.settings.show_vendor,
               show_rating: section.settings.show_rating,
+              show_price: section.settings.show_price,
+              lazy_load: lazy_load,
               skip_styles: skip_card_product_styles,
-              section_id: section.id,
-              quick_add: section.settings.quick_add
+              quick_add: section.settings.quick_add,
+              section_id: section.id
             %}
           </li>
           {%- assign skip_card_product_styles = true -%}
@@ -250,6 +252,12 @@
       "id": "show_description",
       "label": "t:sections.featured-collection.settings.show_description.label",
       "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_price",
+      "default": true,
+      "label": "Show price"
     },
     {
       "type": "select",
