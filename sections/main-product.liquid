@@ -227,6 +227,18 @@
                     </div>
                   </details>
                 </div>
+
+              {%- when 'text_input' -%}
+                <div class="product-form__input product-form__text-input" {{ block.shopify_attributes }}>
+                  <input
+                    class="input-field"
+                    type="text"
+                    name="text_input_{{ block.id }}"
+                    id="TextInput-{{ block.id }}-{{ section.id }}"
+                    placeholder="{{ block.settings.placeholder }}"
+                  >
+                </div>
+
               {%- when 'quantity_selector' -%}
                 <div
                   id="Quantity-Form-{{ section.id }}"
@@ -848,6 +860,11 @@
     {
       "type": "quantity_selector",
       "name": "t:sections.main-product.blocks.quantity_selector.name",
+      "limit": 1
+    },
+    {
+      "type": "text_input",
+      "name": "t:sections.main-product.blocks.text_input.name",
       "limit": 1
     },
     {
