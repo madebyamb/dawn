@@ -228,8 +228,6 @@
                   </details>
                 </div>
 
-                <p>silly text</p>
-
               {%- when 'text_input' -%}
                 <div class="product-form__input product-form__text-input" {{ block.shopify_attributes }}>
                   <input
@@ -270,7 +268,6 @@
                         <span class="visually-hidden">
                           {{- 'products.product.quantity.decrease' | t: product: product.title | escape -}}
                         </span>
-                        <p>silly text</p>
                         <span class="svg-wrapper">
                           {{- 'icon-minus.svg' | inline_asset_content -}}
                         </span>
@@ -478,6 +475,21 @@
 
               {%- when 'variant_picker' -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+
+                {% if product.metafields.custom.input_number_custom_variant %}
+                  <div class="product-form__input">
+                    <label for="custom-number-input">
+                      {{ product.metafields.custom.input_number_label | default: 'Taille' }}
+                    </label>
+                    <select name="properties[Custom Number]" id="custom-number-select">
+                      <option value="3">3 mm</option>
+                      {% for i in (4..40) %}
+                        <option value="{{ i }}">{{ i }} mm</option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                {% endif %}
+
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
                   block: block,
