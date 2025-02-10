@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "password_page": {
@@ -383,6 +392,30 @@
       "min_error": "Cet article a un minimum de {{ min }}",
       "max_error": "Cet article a un maximum de {{ max }}",
       "step_error": "Vous pouvez ajouter cet article uniquement par incréments de {{ step }}"
+    },
+    "rich-text": {
+      "blocks": {
+        "image": {
+          "settings": {
+            "image": {
+              "label": "Télécharger l'image"
+            },
+            "alt": {
+              "label": "Texte alternatif",
+              "info": "Saisissez une description de l'image pour améliorer l'accessibilité"
+            }
+          }
+        },
+        "text": {
+          "name": "Texte",
+          "settings": {
+            "content": {
+              "label": "Contenu",
+              "info": "Entrez le contenu textuel de cette section"
+            }
+          }
+        }
+      }
     }
   },
   "localization": {
