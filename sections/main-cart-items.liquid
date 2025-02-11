@@ -156,6 +156,13 @@
                               </div>
                             {%- endif -%}
                           {%- endfor -%}
+
+                          {% for prop in item.properties %}
+                            {% assign first_char = prop[0] | slice: 0 %}
+                            {% unless prop[1] == blank or first_char == '_' %}
+                              <li>{{ prop[0] }}: {{ prop[1] }}</li>
+                            {% endunless %}
+                          {% endfor %}
                         </dl>
 
                         <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>

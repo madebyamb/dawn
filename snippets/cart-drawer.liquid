@@ -203,6 +203,24 @@
                                   </div>
                                 {%- endif -%}
                               {%- endfor -%}
+                              {% comment %}
+                                {% assign number_fields = (0..10) %}
+                                {% for num in number_fields %}
+                                  {% assign property_key = 'Custom Number ' | append: num %}
+                                  {% assign label_key = 'input_number_' | append: num | append: '_label' %}
+                                  {% assign unit_key = 'input_number_' | append: num | append: '_unit_' %}
+
+                                  {%- if item.properties[property_key] != blank -%}
+                                    <div class="product-option">
+                                      <dt>{{ item.product.metafields.custom[label_key] | default: 'Taille' }}:</dt>
+                                      <dd>
+                                        {{ item.properties[property_key] }}
+                                        {{ item.product.metafields.custom[unit_key] | default: '' }}
+                                      </dd>
+                                    </div>
+                                  {%- endif -%}
+                                {% endfor %}
+                              {% endcomment %}
                             </dl>
 
                             <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>
