@@ -476,15 +476,37 @@
               {%- when 'variant_picker' -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 
-                {% if product.metafields.custom.input_number_custom_variant %}
+                {% if product.metafields.custom.input_number_0 %}
                   <div class="product-form__input">
                     <label for="custom-number-input">
-                      {{ product.metafields.custom.input_number_label | default: 'Taille' }}
+                      {{ product.metafields.custom.input_number_0_label | default: 'Taille' }}
                     </label>
                     <select name="properties[Custom Number]" id="custom-number-select">
-                      <option value="3">3 mm</option>
-                      {% for i in (4..40) %}
-                        <option value="{{ i }}">{{ i }} mm</option>
+                      {% assign min_value_0 = product.metafields.custom.input_number_0_minimum_value | default: 0 %}
+                      {% assign max_value_0 = product.metafields.custom.input_number_0_maximum_value | default: 1 %}
+                      {% for i in (min_value_0..max_value_0) %}
+                        <option value="{{ i }}">
+                          {{ i }}
+                          {{ product.metafields.custom.input_number_0_unit_ | default: '' }}
+                        </option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                {% endif %}
+
+                {% if product.metafields.custom.input_number_1 %}
+                  <div class="product-form__input">
+                    <label for="custom-number-input">
+                      {{ product.metafields.custom.input_number_1_label | default: 'Taille' }}
+                    </label>
+                    <select name="properties[Custom Number]" id="custom-number-select">
+                      {% assign min_value_1 = product.metafields.custom.input_number_1_minimum_value | default: 0 %}
+                      {% assign max_value_1 = product.metafields.custom.input_number_1_maximum_value | default: 1 %}
+                      {% for i in (min_value_1..max_value_1) %}
+                        <option value="{{ i }}">
+                          {{ i }}
+                          {{ product.metafields.custom.input_number_1_unit_ | default: '' }}
+                        </option>
                       {% endfor %}
                     </select>
                   </div>
